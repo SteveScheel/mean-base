@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MEAN Start!</title>
+    <!-- Angular Base Routing -->
+    <base href='/'>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- Js / Libs -->
+    <script src="assets/libs/angular/angular.min.js"></script>
+    <script src="assets/libs/angular-route/angular-route.min.js"></script>
+
+    <!-- App -->
+    <script src="dist/app.js"></script>
+
+</head>
+<body class="container" ng-app="newApp" ng-controller="mainController as main">
+    <div class="jumbotron text-center">
+        <h1>{{ main.message }}</h1>
+    </div>
+
+    <div ng-view></div>
+</body>
+</html>
